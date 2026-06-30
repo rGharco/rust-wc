@@ -34,20 +34,6 @@ fn main() {
     }
 
     if matches.free.is_empty() {
-       // let mut buffer = String::new();
-       // let stdin = io::stdin();
-
-        // match stdin.read_line(&mut buffer) {
-           // Ok(n) => {
-               // println!("{}", buffer);
-             //   format_output(&0,&0,&0);
-            //}
-            
-            //Err(error) => {
-              //  panic!("rust-wc: Failed to read from stdin!");
-            //}
-       // }
-
         let mut nrOfLines: u64 = 0;
         let mut nrOfWords: u64 = 0;       
 	let mut nrOfBytes: u64 = 0; 
@@ -61,4 +47,7 @@ fn main() {
 
         format_output(&nrOfLines, &nrOfWords, &nrOfBytes);
     }
+    
+    hasFileInput = true;
+
 }
